@@ -1,3 +1,154 @@
-.exampleClass {
-    background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 10px;
+    color: #333333;
+}
+
+.container {
+    box-shadow: 0 0 40px rgb(0 0 0 / 20%);
+    max-width: 1440px;
+}
+
+.header {
+    height: 45px;
+    width: 100%;
+    background-color: #1771DD;
+}
+
+.header .return {
+    display: inline-block;
+    color: #ffffff;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.header .return:hover {
+    filter: brightness(0.85);
+}
+
+.application_form {
+    display: flex;
+    padding: 10px;
+}
+
+.separator {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(0 0 0 / 20%);
+    height: 1px;
+}
+
+.info_area {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.info_area .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info_area_separator {
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(0 0 0 / 20%);
+    height: 1px;
+}
+
+form {
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+form .row label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+form .row input {
+    border-radius: 5px;
+    min-height: 24px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    flex-grow: 1;
+}
+
+form .row input:hover {
+    border: 1px solid #1771DD;
+}
+
+form .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+form .row_block_one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .row_block_two {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+form .documents_title {
+    font-weight: bold;
+}
+form .documents_hint {
+    margin-bottom: 10px;
+}
+
+form .privacy_statement {
+    margin-bottom: 15px;
+}
+form .privacy_statement label {
+    padding-left: 5px;
+    position: relative;
+    top: -1px;
+}
+
+form .form_submit {
+    background-color: #1771DD;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+form .form_submit:hover {
+    filter: brightness(1.15);
+}
+
+a {
+    color: #1771DD;
+}
+a:hover {
+    filter: brightness(1.5);
+}
+
+@media only screen and (max-width: 900px) {
+    .application_form {
+        display: block;
+    }
+
+    .info_area {
+        width: auto;
+    }
+
+    .info_area_separator {
+        display: block;
+    }
 }
